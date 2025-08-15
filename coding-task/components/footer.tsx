@@ -4,38 +4,41 @@ export function Footer() {
   return (
     <footer className="border-t-2 border-[#ff6600] mt-8 py-4">
       <div className="max-w-5xl mx-auto px-2">
-        <div className="text-center text-xs text-[#828282] space-x-2">
-          <Link href="/guidelines" className="hover:underline">
-            Guidelines
-          </Link>
-          <span>|</span>
-          <Link href="/faq" className="hover:underline">
-            FAQ
-          </Link>
-          <span>|</span>
-          <Link href="/lists" className="hover:underline">
-            Lists
-          </Link>
-          <span>|</span>
-          <Link href="/api" className="hover:underline">
-            API
-          </Link>
-          <span>|</span>
-          <Link href="/security" className="hover:underline">
-            Security
-          </Link>
-          <span>|</span>
-          <Link href="/legal" className="hover:underline">
-            Legal
-          </Link>
-          <span>|</span>
-          <Link href="/apply" className="hover:underline">
-            Apply to YC
-          </Link>
-          <span>|</span>
-          <Link href="/contact" className="hover:underline">
-            Contact
-          </Link>
+        <div className="text-center text-xs text-[#828282]">
+          {/* Footer links - wrap horizontally when space runs out */}
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            <Link href="/guidelines" className="hover:underline">
+              Guidelines
+            </Link>
+            <span className="hidden sm:inline">|</span>
+            <Link href="/faq" className="hover:underline">
+              FAQ
+            </Link>
+            <span className="hidden sm:inline">|</span>
+            <Link href="/lists" className="hover:underline">
+              Lists
+            </Link>
+            <span className="hidden sm:inline">|</span>
+            <Link href="/api" className="hover:underline">
+              API
+            </Link>
+            <span className="hidden sm:inline">|</span>
+            <Link href="/security" className="hover:underline">
+              Security
+            </Link>
+            <span className="hidden sm:inline">|</span>
+            <Link href="/legal" className="hover:underline">
+              Legal
+            </Link>
+            <span className="hidden sm:inline">|</span>
+            <Link href="/apply" className="hover:underline">
+              Apply to YC
+            </Link>
+            <span className="hidden sm:inline">|</span>
+            <Link href="/contact" className="hover:underline">
+              Contact
+            </Link>
+          </div>
         </div>
 
         <div className="text-center mt-4">

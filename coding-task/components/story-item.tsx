@@ -27,15 +27,15 @@ export function StoryItem({ story, rank }: StoryItemProps) {
   return (
     <>
       <tr>
-        <td className="text-right text-[#828282] text-sm pr-1 align-top pt-1">{rank}.</td>
-        <td className="w-4 align-top pt-1">
-          <div className="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-b-[7px] border-b-[#828282] cursor-pointer hover:border-b-[#ff6600]"></div>
+        <td className="text-right text-[#828282] text-xs sm:text-sm pr-1 align-top pt-1 w-8 sm:w-auto">{rank}.</td>
+        <td className="w-3 sm:w-4 align-top pt-1">
+          <div className="w-0 h-0 border-l-[3px] sm:border-l-[4px] border-l-transparent border-r-[3px] sm:border-r-[4px] border-r-transparent border-b-[5px] sm:border-b-[7px] border-b-[#828282] cursor-pointer hover:border-b-[#ff6600]"></div>
         </td>
         <td className="pl-1">
-          <div className="flex items-start gap-1">
+          <div className="flex flex-col sm:flex-row sm:items-start gap-1">
             <Link
               href={story.url}
-              className="text-black text-sm hover:underline leading-4"
+              className="text-black text-xs sm:text-sm hover:underline leading-tight sm:leading-4 break-words"
               target="_blank"
               rel="noopener noreferrer"
             >

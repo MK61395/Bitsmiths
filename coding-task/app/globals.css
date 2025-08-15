@@ -121,3 +121,33 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Mobile-specific */
+@layer components {
+  /* so table doesn't overflow on mobile */
+  @media (max-width: 640px) {
+    table {
+      table-layout: fixed;
+      width: 100%;
+    }
+    
+    /* so text doesn't overflow in table cells */
+    td {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    
+    /* so spacing is proper on mobile */
+    .story-table td:first-child {
+      width: 2rem;
+    }
+    
+    .story-table td:nth-child(2) {
+      width: 1.5rem;
+    }
+    
+    .story-table td:last-child {
+      width: calc(100% - 3.5rem);
+    }
+  }
+}

@@ -92,7 +92,7 @@ export function StoryList() {
 
   return (
     <div className="bg-[#f6f6ef] px-2 py-2">
-      <table className="w-full">
+      <table className="w-full story-table">
         <tbody>
           {stories.map((story) => (
             <StoryItem key={story.id} story={story} rank={story.rank} />

@@ -17,9 +17,9 @@ export const metadata: Metadata = {
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-[#f6f6ef]">
+    <div className="min-h-screen bg-[#f6f6ef] overflow-x-hidden">
       <Header />
-      <main className="max-w-5xl mx-auto">
+      <main className="max-w-5xl mx-auto px-2 sm:px-4 overflow-x-hidden">
         <StoryList />
       </main>
       <Footer />
